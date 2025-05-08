@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stats
 
+from confusion_matrix import my_confusion_matrix
 from dump import load
 from initial_conditions import train_test_split
 
@@ -16,6 +17,8 @@ if __name__ == "__main__":
     model.evaluate([X_test, gmm_test], y_test)
     y_hats = model.predict([X_test, gmm_test])
     y_hats = y_hats.argmax(axis=1)
+
+    my_confusion_matrix(y_true=y_test, y_pred=y_hats)
 
     for idx, x in enumerate(X_test):
         y_hat = y_hats[idx]

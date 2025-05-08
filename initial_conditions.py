@@ -13,7 +13,7 @@ def fid(x):
 
 
 def fprop(x):
-    return 1.3 * x
+    return 0.3 * x
 
 
 def fsin(x):
