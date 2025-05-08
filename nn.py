@@ -1,4 +1,6 @@
 import tensorflow as tf
+
+
 def Architecture(lstm_input_shape, gmm_input_shape, embedding_space, num_model):
     seq_input = tf.keras.Input(shape=lstm_input_shape, name='lstm_input')
     lstm_out = tf.keras.layers.LSTM(units=embedding_space, name='lstm_layer')(seq_input)

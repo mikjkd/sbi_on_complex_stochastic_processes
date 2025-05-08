@@ -16,6 +16,7 @@ class Model:
         pc2 = self.theta[1]
 
         self.process = StrangeProcessf(pc1=pc1, pc2=pc2, change_rate=0.7, f=f)
+
     def generate(self, T):
         # necessario il reset al fine di mantenere la lungezza della ts fissa
         # in quanto generate_n(T) fa un append di T elementi alla vecchia serie

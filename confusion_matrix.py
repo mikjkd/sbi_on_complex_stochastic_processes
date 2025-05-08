@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
-import numpy as np
 
 y_true = [2, 0, 2, 2, 0, 1] #DA SOSTITUIRE CON LE CORRETTE TRUE LABEL
 y_pred = [0, 0, 2, 2, 0, 2] #DA SOSTITUIRE CON LE CORRETTE PREDICTED LABEL

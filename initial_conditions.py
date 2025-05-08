@@ -7,6 +7,7 @@ gmm_components = 2
 hidden_lstm_space = 10
 train_test_split = 0.2
 
+
 def fid(x):
     return x
 
@@ -17,4 +18,3 @@ def fprop(x):
 
 def fsin(x):
     return math.sin(x)
-

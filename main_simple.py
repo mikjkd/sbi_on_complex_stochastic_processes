@@ -1,13 +1,11 @@
 import math
-from initial_conditions import fid, fprop, fsin
-import keras
+
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.stats as stats
 
 from dump import load
-from initial_conditions import num_model, train_test_split
-from nn import Architecture
+from initial_conditions import train_test_split
 
 # from f_estimators import *
 
